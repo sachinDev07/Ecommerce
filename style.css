@@ -47,6 +47,19 @@ body {
     width: 100%;
 }
 
+button.normal {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: .3s ease;
+}
+
 
 /* Header Start */
 
@@ -271,5 +284,40 @@ body {
 }
 
 
+/* Banner Section */
+
+#banner {
+    width: 100%;
+    height: 40vh;
+    background:url(img/banner/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #fff;
+    color: #ef3636;    
+}
+
+#banner button:hover  {
+    background:#088178;
+    color: #fff;
+}
 
 
