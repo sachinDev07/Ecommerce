@@ -353,6 +353,7 @@ button.white {
     background-size: cover;
     background-position: center;
     padding: 30px;
+    margin-bottom: 2rem;
 }
 
 #sm-banner .banner-box2 {
@@ -385,4 +386,52 @@ button.white {
     border: 1px solid #088178;
 }
 
+
+/* Banner3 Section */
+
+#banner3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:url(img/banner/b7.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#banner3 .banner-box2 {
+    background:url(img/banner/b4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner3 .banner-box3 {
+    background:url(img/banner/b18.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner3 .banner-box h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 .banner-box h3 {
+    color: #ef3636;
+    font-weight: 800;
+    font-size: 15px;
+}
 
