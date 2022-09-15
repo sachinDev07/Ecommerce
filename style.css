@@ -594,6 +594,11 @@ button.white {
 
 
 @media (max-width: 799px) {
+
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
     #navbar {
         display: flex;
         flex-direction: column ;
@@ -646,5 +651,59 @@ button.white {
     #navbar li a.active::after,
     #navbar li a:hover::after {
     bottom: 18px;
-}
+    }
+
+    #hero {
+       height: 70vh;       
+       padding: 0 80px;
+       background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content:center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .product-wrapper {
+        justify-content: center;
+    }
+
+    #product1 .product-box {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box { 
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+        margin-left: 10px;
+    }
+
+    #banner3 .banner-box {
+        width: 28%;
+    
+    }
+
+    #footer .box-wrapper {
+        font-size: 12px;
+    }
+
+    #footer .box-wrapper .second-box a {
+        line-height: 2;
+    }
+
+    #footer .box-wrapper .third-box, .fourth-box {
+        margin-top: 2rem;
+    }
+
 }
