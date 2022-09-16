@@ -175,7 +175,7 @@ button.white {
 }
 
 
-/* Feature Seciton */
+/* Feature Section */
 
 #feature {
     display: flex;
@@ -234,6 +234,10 @@ button.white {
 
 #product1 {
     text-align: center;
+}
+
+#product1 p {
+    color: grey;
 }
 
 #product1 .product-wrapper {
