@@ -636,27 +636,74 @@ button.white {
 }
 
 
-/* Product-Detail Section */
+/* ********************************************* */
+/* ----------------- Single Product  Page ----------------- */
 
-#product-details .info-wrapper {
+/* Single Product Section */
+
+#product-details {
     display: flex;
-    flex: 1;
+    margin-top: 20px;
 }
 
-#product-details .info-wrapper .left .big-shirt {
+#product-details .product-wrapper {
     width: 40%;
-    height: auto;
+    margin-right: 50px;
 }
 
-#product-details .info-wrapper .left .shirt-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
 }
 
-#product-details .info-wrapper .left .shirt-wrapper img {
-    width: 10%;
-    height: auto;
+.small-img-box {
+    flex-basis: 24%;
+    cursor: pointer;
 }
+
+#product-details .details-wrapper {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#product-details .details-wrapper h4 {
+    padding: 40px 0 20px 0;
+}
+
+#product-details .details-wrapper h2 {
+    font-size: 26px;
+}
+
+#product-details .details-wrapper select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details .details-wrapper input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#product-details .details-wrapper input:focus {
+    outline: none;
+}
+
+#product-details .details-wrapper button {
+    background: #088178;
+    color: #fff;
+}
+
+#product-details .details-wrapper span {
+    line-height: 25px;
+}
+
+
+
 
 
 
