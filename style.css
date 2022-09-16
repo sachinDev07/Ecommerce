@@ -908,4 +908,21 @@ button.white {
         margin-bottom: 1rem;
         margin-top: 32px;
     }
+
+
+    /* Single Product */
+
+    #product-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #product-details .product-wrapper {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #product-details .details-wrapper {
+        width: 100%;
+    }
 }
