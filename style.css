@@ -640,7 +640,7 @@ button.white {
 }
 
 
-/* ********************************************* */
+/* ****************************************************/
 /* ----------------- Single Product  Page ----------------- */
 
 /* Single Product Section */
@@ -707,6 +707,29 @@ button.white {
 }
 
 
+
+
+/* ****************************************************/
+/* ----------------- Blog Page ----------------- */
+
+
+#blog-header {
+    background: url(img/banner/b19.jpg);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#blog-header h2, p {
+    color: #fff;
+}
 
 
 
