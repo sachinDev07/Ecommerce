@@ -803,6 +803,33 @@ button.white {
 
 
 
+/* ****************************************************/
+/* ----------------- About Page ----------------- */
+
+
+/* Hero Section */
+#about-header {
+    background: url(img/about/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#about-header h2 {
+    color: #fff;
+}
+
+
+
+
+
+
 
 /* Media Queries */
 
