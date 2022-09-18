@@ -1132,5 +1132,36 @@ button.white {
     }
 
 
+    /* About Page Section */
+
+    #about-head {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about-head .left {
+        margin-top: 0;
+    }
+
+    #about-head .left {
+        width: 100%;
+        padding: 0px 0px 0px 0;
+    }
+    #about-head .left img {
+        width: 100%;
+    }
+
+    #about-head .right {
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
 
 }
