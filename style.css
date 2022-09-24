@@ -1025,6 +1025,33 @@ button.white {
 
 
 
+
+/* ****************************************************/
+/* ----------------- Contact Page ----------------- */
+
+
+/* Header Section */
+
+#cart-header {
+    background: url(img/about/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#cart-header h2 {
+    color: #fff;
+}
+
+
+
+
 /* Media Queries */
 
 
@@ -1165,6 +1192,8 @@ button.white {
         width: 85%;
     }
 }
+
+
 
 
 
