@@ -1148,7 +1148,25 @@ button.white {
         margin-top: 11rem;
     }
 
+
+    /* Contact Page Section */
+
+    #form-details {
+        padding: 43px;    
+    }
+
+    #contact-details .details h2, 
+    #form-details form h2 {
+        font-size: 21px;    
+    }
+
+    #form-details form input, 
+    #form-details form textarea {
+        width: 85%;
+    }
 }
+
+
 
 
 /* Media Queries: Mobile Device */
