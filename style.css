@@ -143,7 +143,7 @@ button.white {
 /* Home Page */
 
 #hero {
-    background-image: url(/img/hero4.png);
+    background-image: url(img/hero4.png);
     background-size: cover;
     height: 90vh;
     width: 100%;
