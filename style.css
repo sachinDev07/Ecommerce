@@ -163,6 +163,10 @@ button.white {
     color: #088178;
 }
 
+#hero p {
+    color: grey;
+}
+
 #hero button {
     background: url(/img/button.png);
     background-color: transparent;
