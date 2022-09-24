@@ -1052,6 +1052,10 @@ button.white {
 
 /* Cart Table Section */
 
+#cart {
+    overflow-x: auto;
+}
+
 #cart table {
     width: 100%;
     border-collapse: collapse;
@@ -1507,5 +1511,22 @@ button.white {
 
     #form-details .people div p {
         font-size: 12px;
+    }
+
+    /* Cart Page Section */
+
+    #cart-add {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    #coupon {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
     }
 }
