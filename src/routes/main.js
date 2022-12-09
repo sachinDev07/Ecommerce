@@ -1,17 +1,26 @@
-const { Router } = require('express');
-const express = require('express');
+const { Router } = require("express");
+const express = require("express");
 
-const NavDetail = require('../models/NavDetail')
+const NavDetail = require("../models/home/NavDetail");
+const Hero = require("../models/home/Hero");
 
 const routes = express.Router();
 
-routes.get('/', async (req, resp) => {
-    const navDetail = await NavDetail.findOne({'_id':'63937e8661d2e752ba892e2f'});
+routes.get("/", async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
 
-    resp.render('index',{
-        navDetail:navDetail
-    })
-})
+  const hero = await Hero.find();
+
+
+  resp.render("index", {
+    navDetail: navDetail,
+
+    hero:hero,
+
+  });
+});
 
 // routes.get('/shop', (req, resp) => {
 //     resp.render('shop')
@@ -37,7 +46,5 @@ routes.get('/', async (req, resp) => {
 //     resp.render('sproduct')
 // })
 
-
-
 // exporting all the routes to the server
-module.exports = routes ;
+module.exports = routes;
