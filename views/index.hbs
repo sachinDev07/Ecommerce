@@ -22,8 +22,11 @@
     {{> navbar data=navDetail}}
     
     
+    
     <!-- Hero Section -->
-    {{#each hero}}
+    
+ {{#each hero}}
+    
     <section id="hero" style="background: url({{this.bgImage}}); background-size:cover; background-position: top 25% right 0;">
         <h4>{{this.subTitle}}</h4>
         <h2>{{this.titleOne}}</h2>
@@ -31,7 +34,8 @@
         <p>Save more with coupons & up to 70% off!</p>
         <a href="{{this.link}}">Shop Now</a>
     </section>
-    {{/each}}
+    
+ {{/each}}
 
     <!-- Feature Section -->
     <section id="feature" class="section-p1">
