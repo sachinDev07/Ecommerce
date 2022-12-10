@@ -4,6 +4,7 @@ const express = require("express");
 const NavDetail = require("../models/home/NavDetail");
 const Hero = require("../models/home/Hero");
 const Feature = require("../models/home/Feature");
+const Product = require("../models/home/Product");
 
 const routes = express.Router();
 
@@ -16,6 +17,8 @@ routes.get("/", async (req, resp) => {
 
   const features = await Feature.find();
 
+  const products = await Product.find();
+
 
   resp.render("index", {
     navDetail: navDetail,
@@ -23,6 +26,9 @@ routes.get("/", async (req, resp) => {
     hero:hero,
 
     features:features,
+
+    products:products,
+
 
   });
 });
@@ -43,13 +49,14 @@ routes.get("/", async (req, resp) => {
 //     resp.render('contact')
 // })
 
-// routes.get('/cart', (req, resp) => {
-//     resp.render('cart')
-// })
+routes.get('/cart', (req, resp) => {
+    resp.render('cart')
+})
 
-// routes.get('/sproduct', (req, resp) => {
-//     resp.render('sproduct')
-// })
+routes.get('/sproduct', (req, resp) => {
+    resp.render('sproduct')
+})
 
 // exporting all the routes to the server
 module.exports = routes;
+
