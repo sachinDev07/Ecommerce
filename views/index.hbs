@@ -103,147 +103,48 @@
         </section>
 
     {{/each}}
-    
+
 
 
 
     <!-- Product2 Section -->
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection New Design</p>
 
-        <div class="product-wrapper">
-            <div class="product-box">
-                <img src="/static/images/products/n1.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n2.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n3.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n4.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n5.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n6.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n7.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product-box">
-                <img src="/static/images/products/n8.jpg" alt="">
-                <div class="description">
-                    <p>adidas</p>
-                    <h6>Cartoon Astronaut T-Shirts</h6>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
+    {{#each newProducts}}
 
-        </div>
-    </section>
+        <section id="product1" class="section-p1">
+            <h2>{{this.title}}</h2>
+            <p>{{this.subtitle}}</p>
+
+            <div class="product-wrapper">
+
+            {{#each details}}
+
+                <div class="product-box">
+                    <img src="{{this.clothImage}}" alt="">
+                    <div class="description">
+                        <p>{{this.brandName}}</p>
+                        <h6>{{this.description}}</h6>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>${{this.price}}</h4>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                </div>
+
+            {{/each}}  
+
+            </div>
+        </section>
+
+    {{/each}}
+
+
+
 
     <!-- Call To Action Banner  -->
     <section id="sm-banner" class="section-p1">
