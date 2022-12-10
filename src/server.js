@@ -4,6 +4,7 @@ const hbs = require("hbs");
 
 const NavDetail = require("./models/home/NavDetail");
 const Hero = require('./models/home/Hero');
+const Feature = require('./models/home/Feature');
 
 const routes = require("./routes/main");
 const hero = require("./models/home/Hero");
@@ -70,6 +71,36 @@ mongoose.connect(
       //   subTitle:"Trade-in-offer",
       //   paragraph:"Save more with coupons & up to 70% off!",
       // })
+
+
+      // Feature.create([
+      //   {
+      //     iconUrl:"/static/images/features/f1.png",
+      //     title:"Free Shipping",
+      //   },
+      //   {
+      //     iconUrl:"/static/images/features/f4.png",
+      //     title:"Save Money",
+      //  },
+      //   {
+      //     iconUrl:"/static/images/features/f2.png",
+      //     title:"Online Order",
+      //   },
+      //   {
+      //     iconUrl:"/static/images/features/f3.png",
+      //     title:"Promotions",
+      //   },
+      //   
+      //   {
+      //     iconUrl:"/static/images/features/f5.png",
+      //     title:"Happy Sell",
+      //   },
+      //   {
+      //     iconUrl:"/static/images/features/f6.png",
+      //     title:"24/7 Support",
+      //   },
+      // ]);
+
 
       console.log("Database connected");
     }
