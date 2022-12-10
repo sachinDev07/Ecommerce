@@ -74,21 +74,21 @@ routes.post('/process-newsLetter-form', async (req,resp)=> {
   }
 });
 
-// routes.get('/shop', (req, resp) => {
-//     resp.render('shop')
-// })
+routes.get('/shop', (req, resp) => {
+    resp.render('shop')
+})
 
-// routes.get('/about', (req, resp) => {
-//     resp.render('about')
-// })
+routes.get('/about', (req, resp) => {
+    resp.render('about')
+})
 
-// routes.get('/blog', (req, resp) => {
-//     resp.render('blog')
-// })
+routes.get('/blog', (req, resp) => {
+    resp.render('blog')
+})
 
-// routes.get('/contact', (req, resp) => {
-//     resp.render('contact')
-// })
+routes.get('/contact', (req, resp) => {
+    resp.render('contact')
+})
 
 routes.get('/cart', (req, resp) => {
     resp.render('cart')
