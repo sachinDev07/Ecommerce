@@ -74,28 +74,73 @@ routes.post('/process-newsLetter-form', async (req,resp)=> {
   }
 });
 
-routes.get('/shop', (req, resp) => {
-    resp.render('shop')
+routes.get('/shop', async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+
+  resp.render("shop", {
+    navDetail: navDetail,
+
+  });
 })
 
-routes.get('/about', (req, resp) => {
-    resp.render('about')
+routes.get('/about',async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+
+  resp.render("about", {
+    navDetail: navDetail,
+
+  });
+
+    
 })
 
-routes.get('/blog', (req, resp) => {
-    resp.render('blog')
+routes.get('/blog', async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+
+  resp.render("blog", {
+    navDetail: navDetail,
+
+  });
+
 })
 
-routes.get('/contact', (req, resp) => {
-    resp.render('contact')
+routes.get('/contact',async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+
+  resp.render("contact", {
+    navDetail: navDetail,
+
+  });
 })
 
-routes.get('/cart', (req, resp) => {
-    resp.render('cart')
+routes.get('/cart', async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+
+  resp.render("cart", {
+    navDetail: navDetail,
+
+  });
 })
 
-routes.get('/sproduct', (req, resp) => {
-    resp.render('sproduct')
+routes.get('/sproduct', async (req, resp) => {
+  const navDetail = await NavDetail.findOne({
+    _id: "63937e8661d2e752ba892e2f",
+  });
+    
+  resp.render("sproduct", {
+    navDetail: navDetail,
+
+  });
 })
 
 // exporting all the routes to the server
