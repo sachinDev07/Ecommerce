@@ -9,6 +9,7 @@ const Product = require("./models/home/Product");
 const Banner = require("./models/home/Banner");
 const NewProducts = require("./models/home/NewProducts");
 const CallToAction = require("./models/home/CallToAction");
+const Banner3 = require("./models/home/Banner3");
 
 const routes = require("./routes/main");
 
@@ -244,6 +245,26 @@ mongoose.connect(
       //     },
       //   ]
       // );
+
+
+
+      // Banner3.create([
+      //   {
+      //     bgImage:"/static/images/banner/b7.jpg",
+      //     title:"SEASON SALE",
+      //     description:"Winter Collection -50% OFF",
+      //   },
+      //   {
+      //     bgImage:"/static/images/banner/b4.jpg",
+      //     title:"NEW FOOTWEAR COLLECTION",
+      //     description:"Spring/Summer 2022",
+      //   },
+      //   {
+      //     bgImage:"/static/images/banner/b18.jpg",
+      //     title:"T-SHIRTS",
+      //     description:"Winter Collection -50% OFF",
+      //   },
+      // ]);
 
 
 

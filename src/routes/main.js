@@ -8,6 +8,7 @@ const Product = require("../models/home/Product");
 const Banner = require("../models/home/Banner");
 const NewProducts = require("../models/home/NewProducts");
 const CallToAction = require("../models/home/CallToAction");
+const Banner3 = require("../models/home/Banner3");
 
 const routes = express.Router();
 
@@ -28,6 +29,8 @@ routes.get("/", async (req, resp) => {
 
   const callToAction = await CallToAction.find();
 
+  const banner3 = await Banner3.find();
+
 
   resp.render("index", {
     navDetail: navDetail,
@@ -43,6 +46,8 @@ routes.get("/", async (req, resp) => {
     newProducts:newProducts,
 
     callToAction:callToAction,
+
+    banner3:banner3,
 
 
   });
