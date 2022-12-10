@@ -1,0 +1,25 @@
+<section id="header">
+        <a href="/"><img src="{{data.brandIcon}}" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+
+                {{#each data.links}}
+
+                <li><a class="active" href="{{this.url}}" target="_blank">{{this.label}}</a></li>
+
+                {{/each}}
+
+            </ul>
+        </div>
+
+        <div id="mobile">
+
+            <a href="{{data.cartUrl}}"><i class="{{data.cartIcon}}"></i></a>
+
+
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+
+       
+    </section>
