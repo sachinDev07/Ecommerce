@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const hbs = require("hbs");
 
 const NavDetail = require("./models/home/NavDetail");
-const Hero = require('./models/home/Hero');
-const Feature = require('./models/home/Feature');
+const hero = require("./models/home/Hero");
+const Feature = require("./models/home/Feature");
+const Product = require("./models/home/Product");
 
 const routes = require("./routes/main");
-const hero = require("./models/home/Hero");
 
 const app = express();
 const PORT = process.env.PORT || 5300;
@@ -30,39 +30,37 @@ mongoose.connect(
     if (err) {
       console.log("Unable to connect with the database");
     } else {
-        // NavDetail.create({
-        //   brandIcon: "/static/images/logo.png",
-        //   cartIcon: "fa-solid fa-bag-shopping",
-        //   cartUrl: "/cart",
-        //   links: [
-        //     {
-        //       label: "Home",
-        //       url: "/",
-        //     },
-        //     {
-        //       label: "Shop",
-        //       url: "/shop",
-        //     },
-        //     {
-        //       label: "About",
-        //       url: "/about",
-        //     },
-        //     {
-        //       label: "Blog",
-        //       url: "/blog",
-        //     },
-        //     {
-        //       label: "Contact",
-        //       url: "/contact",
-        //     },
-        //   ],
+      // NavDetail.create({
+      //   brandIcon: "/static/images/logo.png",
+      //   cartIcon: "fa-solid fa-bag-shopping",
+      //   cartUrl: "/cart",
+      //   links: [
+      //     {
+      //       label: "Home",
+      //       url: "/",
+      //     },
+      //     {
+      //       label: "Shop",
+      //       url: "/shop",
+      //     },
+      //     {
+      //       label: "About",
+      //       url: "/about",
+      //     },
+      //     {
+      //       label: "Blog",
+      //       url: "/blog",
+      //     },
+      //     {
+      //       label: "Contact",
+      //       url: "/contact",
+      //     },
+      //   ],
 
-        // });
-
-
+      // });
 
       // hero section
-      
+
       // hero.create({
       //   bgImage:"/static/images/hero4.png",
       //   link:"/cart",
@@ -71,7 +69,6 @@ mongoose.connect(
       //   subTitle:"Trade-in-offer",
       //   paragraph:"Save more with coupons & up to 70% off!",
       // })
-
 
       // Feature.create([
       //   {
@@ -90,7 +87,7 @@ mongoose.connect(
       //     iconUrl:"/static/images/features/f3.png",
       //     title:"Promotions",
       //   },
-      //   
+      //
       //   {
       //     iconUrl:"/static/images/features/f5.png",
       //     title:"Happy Sell",
@@ -101,6 +98,61 @@ mongoose.connect(
       //   },
       // ]);
 
+
+      // Product.create({
+      //   title: "Feature Products",
+      //   subtitle: "Summer Collection New Design",
+      //   details: [
+      //     {
+      //       clotheImage: "/static/images/products/f1.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f2.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f3.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f4.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f5.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f6.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f7.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //     {
+      //       clotheImage: "/static/images/products/f8.jpg",
+      //       brandName: "adidas",
+      //       description: "Cartoon Astronaut T-Shirts",
+      //       price: 78,
+      //     },
+      //   ],
+      // });
 
       console.log("Database connected");
     }
