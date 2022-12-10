@@ -8,6 +8,7 @@ const Feature = require("./models/home/Feature");
 const Product = require("./models/home/Product");
 
 const routes = require("./routes/main");
+const Banner = require("./models/home/Banner");
 
 const app = express();
 const PORT = process.env.PORT || 5300;
@@ -153,6 +154,17 @@ mongoose.connect(
       //     },
       //   ],
       // });
+
+
+
+      // Banner.create({
+      //   bgImage:"/static/images/banner/b2.jpg",
+      //   title:"Up to 70% Off - All t-Shirts & Accessories",
+      //   subTitle:"Repair Services",
+      //   url:"/shop",
+      // })
+
+
 
       console.log("Database connected");
     }
