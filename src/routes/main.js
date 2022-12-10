@@ -3,6 +3,7 @@ const express = require("express");
 
 const NavDetail = require("../models/home/NavDetail");
 const Hero = require("../models/home/Hero");
+const Feature = require("../models/home/Feature");
 
 const routes = express.Router();
 
@@ -13,11 +14,15 @@ routes.get("/", async (req, resp) => {
 
   const hero = await Hero.find();
 
+  const features = await Feature.find();
+
 
   resp.render("index", {
     navDetail: navDetail,
 
     hero:hero,
+
+    features:features,
 
   });
 });
