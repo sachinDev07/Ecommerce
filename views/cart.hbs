@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    
+    {{!-- css file --}}
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    {{!-- fontawesom link --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    
+    {{> navbar }}
+
+
+
+    <!-- Hero Section -->
+    <section id="cart-header">
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 70% !</p>
+    </section>
+
+    <!-- Cart Table Section -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/static/images/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/static/images/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="/static/images/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Cart Add Section -->
+    <section id="cart-add" class="section-p1">
+         <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" name="" id="" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+         </div>
+         <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+         </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="left">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about out latest shop and <span>special offers</span></p>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    {{> footer}}
+
+    
+
+    <!-- javascript -->
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    
+    {{!-- css file --}}
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    {{!-- fontawesom link --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+   {{> navbar}}
+
+   
+
+    <!-- Hero Section -->
+    <section id="blog-header">
+        <h2>#readmore</h2>
+        <p>Read all case studies about our products!</p>
+    </section>
+
+    <!-- Blog Page Section -->
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b1.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton Jersey Zip-Up Hoodle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>03/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b2.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>How to Style a Quiff</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>04/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b3.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Must-Have Skater Girl Items</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>05/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b4.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton Jersey Zip-Up Hoodle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>06/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b6.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>AW20 Menswear Trends</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>07/01</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="/static/images/blog/b7.jpg" loading="lazy" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton Jersey Zip-Up Hoodle</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni temporibus pariatur illum deserunt non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem aspernatur neque distinctio atque modi?</p>
+                <a href="#">CONTINUE READING</a>
+            </div>
+            <h1>08/01</h1>
+        </div>
+    </section>
+
+    <!-- PageNation Section -->
+    <section id="pagination" class="section-p1">
+        <a class="next-page" href="#">1</a>
+        <a class="next-page" href="#">2</a>
+        <a class="next-page" href="#"><i class="fa fa-arrow-right"></i></i></a>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="left">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about out latest shop and <span>special offers</span></p>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+
+    {{> footer}}
+
+
+
+    <!-- javascript -->
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
