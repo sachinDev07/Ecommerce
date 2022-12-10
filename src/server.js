@@ -1,6 +1,8 @@
 const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
 const hbs = require("hbs");
+const bodyParser = require("body-parser")
 
 const NavDetail = require("./models/home/NavDetail");
 const hero = require("./models/home/Hero");
@@ -11,9 +13,13 @@ const NewProducts = require("./models/home/NewProducts");
 const CallToAction = require("./models/home/CallToAction");
 const Banner3 = require("./models/home/Banner3");
 
+
+app.use(bodyParser.urlencoded({
+  extended:true
+}))
+
 const routes = require("./routes/main");
 
-const app = express();
 const PORT = process.env.PORT || 5300;
 
 // for accessing static files

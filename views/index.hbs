@@ -191,10 +191,12 @@
             <h4>Sign Up For Newsletter</h4>
             <p>Get E-mail updates about out latest shop and <span>special offers</span></p>
         </div>
-        <div class="right">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+        <form action="/process-newsLetter-form" method="post">
+            <div class="right">
+            <input name="email" type="email" placeholder="Your email address">
+            <button type="submit" class="normal">Sign Up</button>
         </div>
+        </form>
     </section>
 
 

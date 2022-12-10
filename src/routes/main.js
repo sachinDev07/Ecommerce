@@ -1,4 +1,4 @@
-const { Router } = require("express");
+const { Router, response } = require("express");
 const express = require("express");
 
 const NavDetail = require("../models/home/NavDetail");
@@ -9,6 +9,7 @@ const Banner = require("../models/home/Banner");
 const NewProducts = require("../models/home/NewProducts");
 const CallToAction = require("../models/home/CallToAction");
 const Banner3 = require("../models/home/Banner3");
+const NewsLetter = require("../models/home/NewsLetter");
 
 const routes = express.Router();
 
@@ -51,6 +52,26 @@ routes.get("/", async (req, resp) => {
 
 
   });
+});
+
+
+// process newsletter form
+routes.post('/process-newsLetter-form', async (req,resp)=> {
+  console.log("form is submitted");
+  console.log(req.body);
+
+  // save the data to database
+  try{
+
+    const data = await NewsLetter.create(req.body);
+    console.log(data);
+    resp.redirect('/');
+
+  }
+  catch(err){
+    console.log(e);
+    resp.redirect('/');
+  }
 });
 
 // routes.get('/shop', (req, resp) => {
