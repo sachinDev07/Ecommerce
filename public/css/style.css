@@ -408,26 +408,11 @@ button.white {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background:url(/static/images/banner/b7.jpg);
     min-width: 30%;
     height: 30vh;
-    background-size: cover;
-    background-position: center;
     padding: 30px;
     margin-bottom: 20px;
     margin-right: 20px;
-}
-
-#banner3 .banner-box2 {
-    background:url(/static/images/banner/b4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#banner3 .banner-box3 {
-    background:url(/static/images/banner/b18.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 #banner3 .banner-box h2 {
