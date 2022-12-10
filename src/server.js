@@ -8,6 +8,7 @@ const Feature = require("./models/home/Feature");
 const Product = require("./models/home/Product");
 const Banner = require("./models/home/Banner");
 const NewProducts = require("./models/home/NewProducts");
+const CallToAction = require("./models/home/CallToAction");
 
 const routes = require("./routes/main");
 
@@ -222,6 +223,27 @@ mongoose.connect(
       //       },
       //     ],
       //   });
+
+
+
+      // CallToAction.create(
+      // [
+      //     {
+      //       bgImage:"/static/images/banner/b17.jpg",
+      //       title:"crazy deals",
+      //       subTitle:"buy 1 get 1 free",
+      //       description:"The best classic dress is on sale at coro",
+      //       url:"/shop"
+      //     },
+      //     {
+      //       bgImage:"/static/images/banner/b10.jpg",
+      //       title:"spring/summer",
+      //       subTitle:"upcoming season",
+      //       description:"The best classic dress is on sale at coro",
+      //       url:"/shop"
+      //     },
+      //   ]
+      // );
 
 
 

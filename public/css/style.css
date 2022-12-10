@@ -363,19 +363,10 @@ button.white {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background:url(/static/images/banner/b17.jpg);
     min-width: 580px;
     height: 50vh;
-    background-size: cover;
-    background-position: center;
     padding: 30px;
     margin-bottom: 2rem;
-}
-
-#sm-banner .banner-box2 {
-    background: url(/static/images/banner/b10.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 #sm-banner .banner-box h4 {
