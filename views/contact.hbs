@@ -61,14 +61,14 @@
 
     <!-- Form Details -->
     <section id="form-details">
-        <form action="">
+        <form action="process-contact-form" method="post">
             <span>LEAVE A MESSAGE</span>
             <h2>We love to hear from you</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
+            <input name="name" type="text" placeholder="Your Name">
+            <input name="email" type="email" placeholder="E-mail">
+            <input name="subject" type="text" placeholder="Subject">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="normal">Submit</button>
         </form>
         <div class="people">
             <div class="p-details">
