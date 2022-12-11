@@ -10,6 +10,7 @@ const NewProducts = require("../models/home/NewProducts");
 const CallToAction = require("../models/home/CallToAction");
 const Banner3 = require("../models/home/Banner3");
 const NewsLetter = require("../models/home/NewsLetter");
+const ContactForm = require("../models/Contact/ContactForm");
 
 const routes = express.Router();
 
@@ -120,6 +121,27 @@ routes.get('/contact',async (req, resp) => {
 
   });
 })
+
+
+// process-contact-form
+
+routes.post('/process-contact-form', async (request,response) => {
+  console.log("form is submitted");
+  console.log(request.body);
+
+  // save the data to the database...
+  try{
+    let data = await ContactForm.create(request.body);
+    console.log(data);
+    resp.redirect('/');
+  }
+  catch(e){
+    console.log(e);
+    response.redirect('/');
+  }
+});
+
+
 
 routes.get('/cart', async (req, resp) => {
   const navDetail = await NavDetail.findOne({
